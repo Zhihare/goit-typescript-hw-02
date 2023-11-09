@@ -9,9 +9,6 @@ class Component<T> {
 
   }
 }
-interface PageProps<T> extends ComponentValueProps<T> {
-  title: T;
-}
 class Page<T> extends Component<ComponentValueProps<T>> {
   pageInfo() {
     console.log(this.props.title);
